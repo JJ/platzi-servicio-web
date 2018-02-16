@@ -1,0 +1,1 @@
+from .hitor import app

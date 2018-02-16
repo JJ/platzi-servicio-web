@@ -7,4 +7,7 @@ setup(
     install_requires=[
         'hitor',
     ],
+    tests_require = [
+        'pytest',
+    ],
 )

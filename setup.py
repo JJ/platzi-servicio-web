@@ -10,4 +10,5 @@ setup(
     tests_require = [
         'pytest',
     ],
+    test_suite = 'tests'
 )

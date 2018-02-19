@@ -7,7 +7,7 @@ services:
       - "5959"
     ports:
       - "5959:5959"
-    command: -e 'input {      tcp {     port => 5959     codec => json   } } output { stdout {} }'
+    command: -e 'input { tcp {  port => 5959  codec => json   } } output { stdout {} }'
     
   web:
     build: .

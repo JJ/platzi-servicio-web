@@ -12,6 +12,5 @@ setup(
         'pytest',
     ],
     test_suite = 'tests',
-
     
 )

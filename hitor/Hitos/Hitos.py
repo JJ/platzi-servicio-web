@@ -3,7 +3,7 @@ import re
 import os
 
 class Hitos:
-    """Una clase para los hitos del proyecto de Infraestructura Virtual"""
+    """Una clase para los hitos del proyecto del curso de Docker en Platzi"""
 
     def __init__(self):
         try: # De https://stackoverflow.com/questions/2835559/parsing-values-from-a-json-file

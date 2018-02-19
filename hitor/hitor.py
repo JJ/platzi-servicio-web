@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, Response
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -7,4 +7,4 @@ def status():
     return jsonify({ 'status': 'OK'})
 
 if __name__ == "__main__":
-    application.run(host='0.0.0.0')
+    app.run(host='0.0.0.0')

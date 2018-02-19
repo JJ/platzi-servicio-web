@@ -1,6 +1,6 @@
 *~
 *.sh
 *.md
-hitor
+*.log
 hitor.egg-info
 logstash-conf

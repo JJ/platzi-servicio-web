@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  logstash:
+    image: docker.elastic.co/logstash/logstash-oss:6.2.1
+    expose:
+      - "5959"
+    ports:
+      - "5959:5959"
+    
+  web:
+    build: .
+    ports:
+      - "8000:80"
+
+    

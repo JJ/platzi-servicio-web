@@ -17,7 +17,7 @@ class GunicornCommand(distutils.cmd.Command):
   
   def run(self):
     """Run command."""
-    command = ['/home/jmerelo/.pyenv/shims/gunicorn -b 0.0.0.0:8000 hitor:app']
+    command = ['gunicorn -b 0.0.0.0:8000 hitor:app']
     self.announce(
         'Running command: %s' % str(command),
         level=distutils.log.INFO)

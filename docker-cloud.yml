@@ -2,12 +2,12 @@ logstash:
   image: docker.elastic.co/logstash/logstash-oss:6.2.1
   expose:
     - "5959"
-  ports:
-    - "5959:5959"
   command: -e 'input { tcp {  port => 5959  codec => json   } } output { stdout {} }'
       
 web:
   image: jjmerelo/platzi-servicio-web
+  ports:
+    - "80:80"
   links:
     - logstash
     

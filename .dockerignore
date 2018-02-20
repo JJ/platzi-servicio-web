@@ -4,3 +4,4 @@
 *.log
 hitor.egg-info
 logstash-conf
+*.yml

@@ -10,6 +10,6 @@ else:
 
 for r in dockercloud.Region.list():
     if  r.provider.find( provider ) > 0:
-        print r.name
+        print r.name, " => ", r.node_types
 
     

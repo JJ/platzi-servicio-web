@@ -8,6 +8,8 @@ if len(sys.argv) > 1:
 else:
     provider = 'digitalocean'
 
-regions = [ r.name for r in dockercloud.Region.list() if  r.provider.find( provider ) > 0 ]
-print regions
+for r in dockercloud.Region.list():
+    if  r.provider.find( provider ) > 0:
+        print r.name
+
     

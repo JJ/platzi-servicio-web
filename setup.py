@@ -6,8 +6,7 @@ class GunicornCommand(distutils.cmd.Command):
   """A custom command to run Pylint on all Python source files."""
 
   description = 'ejecuta gunicorn'
-  user_options = [
-  ]
+  user_options = []
 
   def initialize_options(self):
       pass 

@@ -1,4 +1,6 @@
 FROM python:3
+LABEL version="0.9"
+LABEL maintainer='jjmerelo@gmail.com'
 
 WORKDIR /usr/src/app
 
